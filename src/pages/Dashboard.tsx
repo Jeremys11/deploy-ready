@@ -5,6 +5,18 @@ import { Users, Phone, Clock, TrendingUp, Plus, User, Calendar } from "lucide-re
 import { StatusBadge } from "@/components/StatusBadge";
 
 export default function Dashboard() {
+  // Function to calculate engagement rate as percentage of contacts that became engagements
+  const calculateEngagementRate = (contactsToday: number, engagementsToday: number): string => {
+    if (contactsToday === 0) return "0%";
+    const rate = (engagementsToday / contactsToday) * 100;
+    return `${rate.toFixed(1)}%`;
+  };
+
+  // Example data - replace with actual data from your API/state
+  const contactsToday = 0;
+  const engagementsToday = 0;
+  const engagementRate = calculateEngagementRate(contactsToday, engagementsToday);
+
   const recentActivity = [
     /*
     {
@@ -56,7 +68,7 @@ export default function Dashboard() {
         />
         <KPICard
           title="Contacts Today"
-          value="0"
+          value={contactsToday.toString()}
           icon={Phone}
           //trend={{ value: "+8% from yesterday", positive: true }}
         />
@@ -68,7 +80,7 @@ export default function Dashboard() {
         />
         <KPICard
           title="Engagement Rate"
-          value="0"
+          value={engagementRate}
           icon={TrendingUp}
           //trend={{ value: "+3% from last week", positive: true }}
         />
