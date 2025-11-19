@@ -11,17 +11,7 @@ export default function Members() {
   const [searchQuery, setSearchQuery] = useState("");
 
   const members = [
-    {
-      id: "AMI001234",
-      name: "John Martinez",
-      dob: "1965-03-15",
-      phone: "(555) 123-4567",
-      condition: "Diabetes",
-      pcp: "Dr. Sarah Chen",
-      status: "active" as const,
-      lastContact: "2024-01-15",
-      vbc: true,
-    },
+    /*
     {
       id: "AMI001567",
       name: "Emily Chen",
@@ -32,40 +22,8 @@ export default function Members() {
       status: "pending" as const,
       lastContact: "2024-01-14",
       vbc: false,
-    },
-    {
-      id: "AMI002891",
-      name: "Robert Williams",
-      dob: "1958-11-30",
-      phone: "(555) 345-6789",
-      condition: "COPD",
-      pcp: "Dr. Jennifer Lee",
-      status: "active" as const,
-      lastContact: "2024-01-16",
-      vbc: true,
-    },
-    {
-      id: "AMI003445",
-      name: "Lisa Thompson",
-      dob: "1980-05-18",
-      phone: "(555) 456-7890",
-      condition: "Asthma",
-      pcp: "Dr. David Park",
-      status: "no-response" as const,
-      lastContact: "2024-01-10",
-      vbc: false,
-    },
-    {
-      id: "AMI004123",
-      name: "Maria Garcia",
-      dob: "1969-09-25",
-      phone: "(555) 567-8901",
-      condition: "CHF",
-      pcp: "Dr. Sarah Chen",
-      status: "active" as const,
-      lastContact: "2024-01-12",
-      vbc: true,
-    },
+    }
+      */
   ];
 
   const filteredMembers = members.filter((member) =>

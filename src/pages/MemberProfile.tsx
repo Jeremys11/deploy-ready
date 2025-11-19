@@ -11,6 +11,7 @@ export default function MemberProfile() {
 
   // Mock data - would be fetched based on memberId
   const member = {
+    /*
     id: "AMI001234",
     name: "John Martinez",
     dob: "1965-03-15",
@@ -28,9 +29,11 @@ export default function MemberProfile() {
     status: "active" as const,
     vbc: true,
     conditions: ["Diabetes Type 2", "Hypertension"],
+    */
   };
 
   const outreachHistory = [
+    /*
     {
       id: 1,
       date: "2024-01-15",
@@ -42,38 +45,20 @@ export default function MemberProfile() {
       notes: "Discussed medication adherence. Member reports taking medications as prescribed. Scheduled follow-up appointment with PCP.",
       followUp: "2024-01-22",
     },
-    {
-      id: 2,
-      date: "2024-01-08",
-      time: "2:15 PM",
-      method: "Home Visit",
-      worker: "Sarah Johnson",
-      outcome: "Engaged",
-      duration: "45 min",
-      notes: "Conducted health assessment. Reviewed blood glucose logs. Member needs assistance with transportation to appointments.",
-      followUp: "2024-01-15",
-    },
-    {
-      id: 3,
-      date: "2024-01-02",
-      time: "11:00 AM",
-      method: "Phone Call",
-      worker: "Mike Rodriguez",
-      outcome: "No Response",
-      duration: "-",
-      notes: "Left voicemail requesting callback to schedule home visit.",
-      followUp: "2024-01-05",
-    },
+    */
   ];
 
   const utilization = {
+    /*
     claimCount: 24,
     paidAmount: "$12,450",
     lastClaim: "2024-01-10",
     erVisits: 2,
     admissions: 1,
+    */
   };
 
+  /*
   return (
     <div className="space-y-6">
       <div className="flex items-start justify-between">
@@ -302,4 +287,5 @@ export default function MemberProfile() {
       </Tabs>
     </div>
   );
+  */
 }

@@ -6,6 +6,8 @@ interface LayoutProps {
   children: ReactNode;
 }
 
+{/*Comment*/}
+
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background">
@@ -59,14 +61,11 @@ export function Layout({ children }: LayoutProps) {
                 </NavLink>
               </nav>
             </div>
-
+            
             <div className="flex items-center gap-3">
               <div className="hidden sm:block text-right">
-                <p className="text-sm font-medium">Sarah Johnson</p>
-                <p className="text-xs text-muted-foreground">Outreach Worker</p>
               </div>
               <div className="h-9 w-9 rounded-full bg-primary/10 flex items-center justify-center text-primary font-medium">
-                SJ
               </div>
             </div>
           </div>

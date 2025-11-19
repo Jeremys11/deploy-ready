@@ -6,6 +6,7 @@ import { StatusBadge } from "@/components/StatusBadge";
 
 export default function Dashboard() {
   const recentActivity = [
+    /*
     {
       id: 1,
       member: "John Martinez",
@@ -14,37 +15,12 @@ export default function Dashboard() {
       worker: "Sarah Johnson",
       time: "15 minutes ago",
       outcome: "active" as const,
-    },
-    {
-      id: 2,
-      member: "Emily Chen",
-      memberId: "AMI001567",
-      action: "Follow-up scheduled",
-      worker: "Mike Rodriguez",
-      time: "1 hour ago",
-      outcome: "pending" as const,
-    },
-    {
-      id: 3,
-      member: "Robert Williams",
-      memberId: "AMI002891",
-      action: "Home visit completed",
-      worker: "Sarah Johnson",
-      time: "2 hours ago",
-      outcome: "completed" as const,
-    },
-    {
-      id: 4,
-      member: "Lisa Thompson",
-      memberId: "AMI003445",
-      action: "No answer - will retry",
-      worker: "Jennifer Lee",
-      time: "3 hours ago",
-      outcome: "no-response" as const,
-    },
+    }
+      */
   ];
 
   const priorityMembers = [
+    /*
     {
       id: 1,
       name: "Maria Garcia",
@@ -52,23 +28,8 @@ export default function Dashboard() {
       condition: "Diabetes",
       lastContact: "5 days ago",
       reason: "High utilization - 3 ER visits this month",
-    },
-    {
-      id: 2,
-      name: "James Anderson",
-      memberId: "AMI005678",
-      condition: "COPD",
-      lastContact: "7 days ago",
-      reason: "Missed 2 scheduled appointments",
-    },
-    {
-      id: 3,
-      name: "Patricia Brown",
-      memberId: "AMI006234",
-      condition: "CHF",
-      lastContact: "10 days ago",
-      reason: "Recent hospital discharge",
-    },
+    }
+      */
   ];
 
   return (
@@ -77,7 +38,7 @@ export default function Dashboard() {
         <div>
           <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
           <p className="text-muted-foreground">
-            Welcome back, Sarah. Here's your overview for today.
+            SAMPLE TEXT P TEXT-MUTED-FOREGROUND
           </p>
         </div>
         <Button className="gap-2">
@@ -89,27 +50,27 @@ export default function Dashboard() {
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <KPICard
           title="Active Members"
-          value="1,248"
+          value="0"
           icon={Users}
-          trend={{ value: "+12% from last month", positive: true }}
+          //trend={{ value: "+12% from last month", positive: true }}
         />
         <KPICard
           title="Contacts Today"
-          value="47"
+          value="0"
           icon={Phone}
-          trend={{ value: "+8% from yesterday", positive: true }}
+          //trend={{ value: "+8% from yesterday", positive: true }}
         />
         <KPICard
           title="Open Cases"
-          value="156"
+          value="0"
           icon={Clock}
-          description="23 require follow-up today"
+          //description="23 require follow-up today"
         />
         <KPICard
           title="Engagement Rate"
-          value="68%"
+          value="0"
           icon={TrendingUp}
-          trend={{ value: "+3% from last week", positive: true }}
+          //trend={{ value: "+3% from last week", positive: true }}
         />
       </div>
 
